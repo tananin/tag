@@ -1,0 +1,20 @@
+[[-
+Страница вывода тэгов, с пагинацией
+
+[[!$tag-page]]
+
+]]
+
+
+[[!pdoPage@pagination?
+    &parents=`13`
+    &depth=`1`
+    &includeContent=`1`
+    &tpl=`news__tpl`
+    &limit=`5`
+    &includeTVs=`images,tag`
+    &where=`{"tag:LIKE":"%[[!getUrlParam? &name=`tag`]]%"}`
+]]
+
+<!-- Плэйсхолдэр пагинации -->
+[[!+page.nav]]
